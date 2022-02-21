@@ -35,8 +35,15 @@ Run following commands to clone the repo, build and run LEMP Dock docker image.
 
 
 ## Documentation
+
 ### PHP-FPM
-Add your source code in `www` directory and this source code will be available in your `php-fpm` and `nginx` containers `/var/www` diectory.
+Symlink your source code in the `www` directory and this source code will be available in your `php-fpm` and `nginx` containers `/var/www` diectory.
+
+Do the following to symlink your PHP based app:
+
+1. cd to your www directory
+2. Run the following: `ln -s /path/to/project html`
+
 ### Nginx
 To add a new site in your LEMP Dock, you need to add a new nginx config file in `images/nginx/sites/` directory.
 Create a copy of the `images/nginx/sites/default.conf` file and edit `server_name` and `root` according to your application.
