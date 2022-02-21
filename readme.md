@@ -57,7 +57,21 @@ Create a copy of the `images/nginx/sites/default.conf` file and edit `server_nam
     user: root
     pass: root
 
-##### Restore database from backup
+### Restore database from backup
+
+#### Using Workbench
+
+Set up workbench to connect to local host by entering the folowing:
+
+1. Click on plus icon to add new server
+*. Enter mysql information above
+*. Once connected, click on `Data Import/Restore`
+*. In the Import Options section, click `Import from Self-Contained File`
+*. Select your file by click on the button to the far right of option choice
+*. Set your `Default Target Schema` by clicking on the `New` button at the far left and entering the name `xchangge`
+*. Select `Start Import`
+
+#### Using Terminal
 
 Find the container id for mysql and then run the following to access:
 
