@@ -2,9 +2,9 @@ FROM php:7.2-fpm-stretch
 
 RUN apt-get update && apt-get install -y libmcrypt-dev git\
     mysql-client libmagickwand-dev --no-install-recommends \
-    && pecl install imagick \
-    && docker-php-ext-enable imagick \
-    && docker-php-ext-install mbstring mysqli pdo_mysql gd zip \
+    && pecl install imagick redis \
+    && docker-php-ext-enable imagick redis \
+    && docker-php-ext-install mbstring mysqli pdo_mysql gd zip bcmath \
     && apt-get install unzip
 
 # Install Composer
