@@ -27,6 +27,7 @@ services:
         - lemp_dock_nginx_1
       depends_on:
         - php-fpm
+        - redis
   mysql:
       build:
         context: ./images/mysql
