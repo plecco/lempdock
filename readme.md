@@ -64,12 +64,12 @@ Create a copy of the `images/nginx/sites/default.conf` file and edit `server_nam
 Set up workbench to connect to local host by entering the folowing:
 
 1. Click on plus icon to add new server
-*. Enter mysql information above
-*. Once connected, click on `Data Import/Restore`
-*. In the Import Options section, click `Import from Self-Contained File`
-*. Select your file by click on the button to the far right of option choice
-*. Set your `Default Target Schema` by clicking on the `New` button at the far left and entering the name `xchangge`
-*. Select `Start Import`
+2. Enter mysql information above
+3. Once connected, click on `Data Import/Restore`
+4. In the Import Options section, click `Import from Self-Contained File`
+5. Select your file by click on the button to the far right of option choice
+6. Set your `Default Target Schema` by clicking on the `New` button at the far left and entering the name `xchangge`
+7. Select `Start Import`
 
 #### Using Terminal
 
